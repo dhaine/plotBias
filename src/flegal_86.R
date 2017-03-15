@@ -153,14 +153,14 @@ dat$R_star <- with(dat,
 )
 dat <- subset(dat, (se==0.99 & sp==0.8) | (se==0.95 & sp==0.85) | (se==0.9 & sp==0.9) |
               (se==0.85 & sp==0.95) | (se==0.8 & sp==0.99))
-dat$levels <- with(dat, ifelse(se==0.99 & sp==0.8, "Se=0.99, Sp==0.80",
+dat$levels <- with(dat, ifelse(se==0.99 & sp==0.8, "Se=0.99, Sp=0.80",
                         ifelse(se==0.95 & sp==0.85, "Se=0.95, Sp=0.85",
                         ifelse(se==0.9 & sp==0.9, "Se=0.9, Sp=0.9",
                         ifelse(se==0.85 & sp==0.95, "Se=0.85, Sp=0.95",
                                "Se=0.80, Sp=0.99")))))
 
-palette538 <- c("#FF2700", "#008FD5", "#77AB43", "#8B008B", "#FFA500")
-                                "blue", "green", "magenta4", "orange"))
+palette538 <- c("#FF2700", "#008FD5", "#77AB43", "#8B008B", "#FFA500",
+                                "blue", "green", "magenta4", "orange")
 ggplot(dat, aes(x = pE, y = R_star, group = levels, colour = levels)) +
     geom_line(size=1) +
     scale_color_manual(values=palette538) +
@@ -182,7 +182,7 @@ ggplot(dat, aes(x = pE, y = R_star, group = levels, colour = levels)) +
           axis.text.x = element_text(colour="grey42"),
           plot.caption = element_text(colour="grey41", size=8)) +
     guides(col=guide_legend(ncol=2)) +
-    xlab("Prevelance of exposure") + 
+    xlab("Prevalence of exposure") + 
     ylab("Apparent relative risk") +
     ggtitle("Apparent relative risk as a function of prevalence",
             subtitle="True relative risk = 10") +
@@ -204,7 +204,7 @@ dat$pE_max <- with(dat, 1 / (1 + sqrt((R*se*(1-se)) / (sp*(1-sp))))
                    )
 dat <- subset(dat, (se==0.99 & sp==0.7) | (se==0.99 & sp==0.9) | (se==0.99 & sp==0.99) |
               (se==0.9 & sp==0.99) | (se==0.7 & sp==0.99))
-dat$levels <- with(dat, ifelse(se==0.99 & sp==0.7, "Se=0.99, Sp==0.70",
+dat$levels <- with(dat, ifelse(se==0.99 & sp==0.7, "Se=0.99, Sp=0.70",
                         ifelse(se==0.99 & sp==0.9, "Se=0.99, Sp=0.90",
                         ifelse(se==0.99 & sp==0.99, "Se=0.99, Sp=0.99",
                         ifelse(se==0.9 & sp==0.99, "Se=0.90, Sp=0.99",
@@ -261,7 +261,7 @@ dat$R_star <- with(dat,
 
 dat <- subset(dat, (se==1 & sp==1) | (se==0.99 & sp==0.99) | (se==0.95 & sp==0.95) |
               (se==0.9 & sp==0.9) | (se==0.85 & sp==0.85) | (se==0.8 & sp==0.8))
-dat$levels <- with(dat, ifelse(se==1 & sp==1, "Se=1.00, Sp==1.00",
+dat$levels <- with(dat, ifelse(se==1 & sp==1, "Se=1.00, Sp=1.00",
                         ifelse(se==0.99 & sp==0.99, "Se=0.99, Sp=0.99",
                         ifelse(se==0.95 & sp==0.95, "Se=0.95, Sp=0.95",
                         ifelse(se==0.9 & sp==0.9, "Se=0.90, Sp=0.90",
@@ -292,7 +292,7 @@ ggplot(dat, aes(x = R, y = R_star, group = levels, colour = levels)) +
     guides(col=guide_legend(ncol=2)) +
     xlab("True relative risk") + 
     ylab("Apparent relative risk") +
-    ggtitle("Apparent relative risk as a function of true relative risk",
+    ggtitle("Apparent relative risk, function of true relative risk",
             subtitle="When prevalence maximizes apparent relative risk") +
     labs(caption = "Flegal et al. (1986), Am. J. Epidemiol. 123(4), 736-751")
 ggsave(filename = "graphics/pdf/flegal_86_6.pdf", width = 14, height = 10.5,

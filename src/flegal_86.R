@@ -155,7 +155,7 @@ dat <- subset(dat, (se==0.99 & sp==0.8) | (se==0.95 & sp==0.85) | (se==0.9 & sp=
               (se==0.85 & sp==0.95) | (se==0.8 & sp==0.99))
 dat$levels <- with(dat, ifelse(se==0.99 & sp==0.8, "Se=0.99, Sp=0.80",
                         ifelse(se==0.95 & sp==0.85, "Se=0.95, Sp=0.85",
-                        ifelse(se==0.9 & sp==0.9, "Se=0.9, Sp=0.9",
+                        ifelse(se==0.9 & sp==0.9, "Se=0.90, Sp=0.90",
                         ifelse(se==0.85 & sp==0.95, "Se=0.85, Sp=0.95",
                                "Se=0.80, Sp=0.99")))))
 

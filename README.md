@@ -10,6 +10,8 @@ Graphs of the effects of biases on measures of risk from these two papers:
   
 Graphs were re-drawn with R ggplot2.
 
+## Copeland
+
 ![](./src/graphics/jpg/copeland_77_1_orig.jpg) ![](./src/graphics/jpg/copeland_77_1.jpg)
 
 ![](./src/graphics/jpg/copeland_77_2_orig.jpg) ![](./src/graphics/jpg/copeland_77_2.jpg)
@@ -18,3 +20,20 @@ Graphs were re-drawn with R ggplot2.
 
 ![](./src/graphics/jpg/copeland_77_4_orig.jpg) ![](./src/graphics/jpg/copeland_77_4.jpg)
 
+## Flegal
+
+![](./src/graphics/jpg/flegal_86_1_orig.jpg) ![](./src/graphics/jpg/flegal_86_1.jpg)
+
+![](./src/graphics/jpg/flegal_86_2_orig.jpg) ![](./src/graphics/jpg/flegal_86_2.jpg)
+
+![](./src/graphics/jpg/flegal_86_3_orig.jpg) ![](./src/graphics/jpg/flegal_86_3.jpg)
+
+![](./src/graphics/jpg/flegal_86_4_orig.jpg) ![](./src/graphics/jpg/flegal_86_4.jpg)
+
+![](./src/graphics/jpg/flegal_86_5_orig.jpg) ![](./src/graphics/jpg/flegal_86_5.jpg)
+
+![](./src/graphics/jpg/flegal_86_6_orig.jpg) ![](./src/graphics/jpg/flegal_86_6.jpg)
+
+![](./src/graphics/jpg/flegal_86_7_orig.jpg) ![](./src/graphics/jpg/flegal_86_7.jpg)
+
+![](./src/graphics/jpg/flegal_86_8_orig.jpg) ![](./src/graphics/jpg/flegal_86_8.jpg)

@@ -35,8 +35,5 @@ messages.txt
 .Rhistory
 .RData
 
-# nothing from graphics directory
-/src/graphics/
-
 # nothing from cache directory when using knitr
 /src/cache/

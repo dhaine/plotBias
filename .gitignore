@@ -13,7 +13,6 @@
 
 # no remains from tex processing
 *.bib
-*.pdf
 *.aux
 *.bbl
 *.blg

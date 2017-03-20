@@ -10,4 +10,5 @@ Graphs of the effects of biases on measures of risk from these two papers:
 
     Then | Now
     :---:|:---:
-    ![](./src/graphics/jpg/copeland_77_1_orig.jpg) | ![](./src/graphics/jpg/copeland_77_1.jpg)
+    ![](./src/graphics/jpg/copeland_77_1_orig.jpg | width=100)
+    | ![](./src/graphics/jpg/copeland_77_1.jpg | width=100)

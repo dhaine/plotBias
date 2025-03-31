@@ -1,5 +1,7 @@
 # Bias Plots
 
+[![Project Status: Moved to http://codeberg.org/dhaine/plotBias – The project has been moved to a new location, and the version at that location should be considered authoritative.](https://www.repostatus.org/badges/latest/moved.svg)](https://www.repostatus.org/#moved) to [http://codeberg.org/dhaine/plotBias](http://codeberg.org/dhaine/plotBias)
+
 Graphs of the effects of biases on measures of risk from these two papers:
 
 - Bias due to misclassification in the estimation of relative risk,
